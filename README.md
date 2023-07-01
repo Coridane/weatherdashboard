@@ -1,6 +1,6 @@
 # 06 Server-Side APIs: Weather Dashboard
 
-## The Appp
+## The App
 
 Using an OpenWeatherMap API, this web application allows the user to search for a city, displays the current weather up above, and a weather forecast for the next five days below. Each search is archived in a list on the left and clicking on a previous search will re-submit it.
 
