@@ -4,6 +4,13 @@ console.log(date)
 
 var recent = new Array
 
+var enter = document.getElementById("input");
+input.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementById("searchBtn").click();
+  }})
+
 // Pull value from search field and reset form
 function start() {
     var city = document.getElementById("input").value;
