@@ -12,6 +12,7 @@ header {
 
 #title {
     position: relative;
+    top: 20%;
     left: 50%;    
 }
 
@@ -115,7 +116,7 @@ header {
     position: absolute;
     left: 425px;
     bottom: 20px;
-    color: blue;
+    color: yellow;
     font-size: 30px;
 }
 
@@ -130,7 +131,7 @@ header {
     position: absolute;
     left: 590px;
     bottom: 20px;
-    color: blue;
+    color: yellow;
     font-size: 30px;
     white-space: nowrap;
 }
@@ -192,7 +193,7 @@ header {
         position: absolute;
         left: 425px;
         top: 100px;
-        color: blue;
+        color: yellow;
         font-size: 30px;
 }}
 
@@ -209,7 +210,7 @@ header {
         position: absolute;
         left: 590px;
         top: 100px;
-        color: blue;
+        color: yellow;
         font-size: 30px;
         white-space: nowrap;
 }}
