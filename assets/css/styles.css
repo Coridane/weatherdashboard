@@ -1,0 +1,164 @@
+* {
+    font-family: 'Pathway Extreme', sans-serif;
+}
+
+header {
+    display: block;
+    top: 50%;
+    height: 70px;    
+    background-image: linear-gradient(to right, blue, darkblue);
+    color: white;
+}
+
+#title {
+    position: relative;
+    left: 50%;    
+}
+
+#sidebar {
+    position: absolute;
+    top: 60px;
+    height: 800px;
+    width: 300px;
+}
+
+#searchTip {
+    display: absolute;
+    padding-top: -50px;
+}
+
+#input {
+    height: 25px;
+    width: 100%;
+    text-align: center;
+}
+
+#searchBtn {
+    height: 30px;
+    width: 102%;
+    margin-top: 5px;
+    border: 0;
+    background-color: #797EF6;
+    color: white;
+    transition-duration: 0.4s;
+}
+
+#searchBtn:hover {
+    background-color: yellow;
+    color: black;
+}
+
+#archive button {
+    background-color: #00FF00;
+    color: black;
+    height: 30px;
+    width: 102%;
+    border: 0;
+    transition-duration: 0.4s;
+    margin-top: 5px;
+}
+
+#archive button:hover {
+    background-color: yellow;
+    color: black;
+}
+
+#results {
+    display: none;
+    margin-top: 10px;
+    margin-left: 325px;
+    height: 400px;
+    width: 800px;
+    border-style: solid;  
+    background-color: lightseagreen  
+}
+
+#targetCity {
+    position: relative;
+    left: 10px;
+}
+
+#data {
+    position: relative;
+    left: 10px;
+    font-family: 'Roboto', sans-serif;    
+}
+
+#icon {
+    position: relative;
+    left: 0px;
+    
+}
+
+#temp-head {
+    position: absolute;
+    left: 245px;
+    bottom: 100px;
+    font-size: 30px;
+}
+
+#temp {
+    position: absolute;
+    left: 250px;
+    bottom: 20px;    
+    font-size: 30px;
+}
+
+#hum-head {
+    position: absolute;
+    left: 390px;
+    bottom: 100px;
+    font-size: 30px;
+}
+
+#hum {
+    position: absolute;
+    left: 425px;
+    bottom: 20px;
+    color: blue;
+    font-size: 30px;
+}
+
+#wind-head {
+    position: absolute;
+    left: 605px;
+    bottom: 100px;
+    font-size: 30px;
+}
+
+#wind {
+    position: absolute;
+    left: 590px;
+    bottom: 20px;
+    color: blue;
+    font-size: 30px;
+    white-space: nowrap;
+}
+
+#forecast {
+    position: absolute;
+    top: 530px;
+    left: 300px;
+    width: 900px;   
+}
+
+.day {    
+    display: none;
+    float: left;
+    background-color: lightblue;
+    border-style: solid;
+    height: 200px;
+    width: 125px;
+    margin-left: 35px;
+    color: black;
+    
+}
+
+.day p {
+    margin-top: 0px;
+    margin-left: 10px;
+}
+
+.forecastInfo {
+    font-size: 14px;    
+}

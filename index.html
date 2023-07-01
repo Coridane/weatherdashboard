@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pathway+Extreme:wght@500&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Weather Dashboard</title>
+</head>
+<body>
+
+    <header><h1 id="title">Weather Dashboard</h1></header>
+
+    <div id="sidebar">        
+        <br>
+        <h2 id="searchTip">Search for a city:</h2>        
+        <form id="search"><input id="input" type="text" placeholder="Example: San Diego"></form>
+        <button id="searchBtn" type="button" onclick="start()">Search</button>
+        <br><br>
+        <div id="archive">Recent Searches
+            <br><br>
+        </div>
+    </div>
+
+    <div id="results">
+        <h2 id="targetCity"></h2>        
+        <span id="data">
+            <br>            
+            <img src="" id="icon">
+            <label id="temp-head">Temp</label>
+            <p id="temp"></p> 
+            <label id="hum-head">Humidity</label>
+            <p id="hum"></p>            
+            <label id="wind-head">Wind</label>
+            <p id="wind"></p>            
+        </span>        
+    </div>   
+
+    <div id="forecast">
+        <div id="day1" class="day">
+            <p id="d0-date"></p>
+            <img src="" id="d0-icon">
+            <p id="d0-temp" class="forecastInfo"></p>
+            <p id="d0-hum" class="forecastInfo"></p>
+            <p id="d0-wind" class="forecastInfo"></p>            
+        </div>
+        <div id="day2" class="day">
+            <p id="d1-date"></p>
+            <img src="" id="d1-icon">
+            <p id="d1-temp" class="forecastInfo"></p>
+            <p id="d1-hum" class="forecastInfo"></p>
+            <p id="d1-wind" class="forecastInfo"></p>
+        </div>
+        <div id="day3" class="day">
+            <p id="d2-date"></p>
+            <img src="" id="d2-icon">
+            <p id="d2-temp" class="forecastInfo"></p>
+            <p id="d2-hum" class="forecastInfo"></p>
+            <p id="d2-wind" class="forecastInfo"></p>
+        </div>
+        <div id="day4" class="day">
+            <p id="d3-date"></p>
+            <img src="" id="d3-icon">
+            <p id="d3-temp" class="forecastInfo"></p>
+            <p id="d3-hum" class="forecastInfo"></p>
+            <p id="d3-wind" class="forecastInfo"></p>
+        </div>
+        <div id="day5" class="day">
+            <p id="d4-date"></p>
+            <img src="" id="d4-icon">
+            <p id="d4-temp" class="forecastInfo"></p>
+            <p id="d4-hum" class="forecastInfo"></p>
+            <p id="d4-wind" class="forecastInfo"></p>
+        </div>        
+
+
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>    
+
+</body>
+</html>

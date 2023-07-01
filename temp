@@ -1,0 +1,106 @@
+
+
+// Get user's current date for header
+var date = new Date().toLocaleDateString();
+console.log(date)
+
+// Call function after user clicks the Search button
+// function getInput() {    
+//         e.preventDefault();
+//         convertCity();
+//     }
+
+// Case and archive city
+function archiveCity(city) {
+        
+    var city = document.getElementById("search").value;
+    var newCity = [city].reduce((accum, char) => (char === " ") ? accum : accum + char, "");
+    console.log(newCity)
+    
+    var breakdown = city.toLowerCase().split(" ");
+    console.log(breakdown)
+    
+    var properCity = "";
+    for (var i = 0; i < breakdown.length; i++) {
+        console.log(i)
+        breakdown[i] = breakdown[i][0].toUpperCase() + breakdown[i].slice(1);
+        console.log(breakdown)
+        properCity += " " + breakdown[i];
+        console.log(properCity)
+    }
+    return properCity
+    console.log(properCity)
+
+    // ("#archive").append("<button type="button">" + citye
+    
+
+
+
+
+    function start() {
+        var city = document.getElementById("search").value
+        console.log(city)
+        
+        cleanUp();
+    }
+    
+    // Case and archive city
+    function cleanUp {}
+    
+    
+    function archiveCity() {
+    
+    
+
+    convertCity()
+
+
+
+// Convert city into latitude and longitude with Geocoding API as required by the 5 day/3 hour API
+function convertCity() {    
+    var API = "http://api.openweathermap.org/geo/1.0/direct?q=" + city + "&limit={limit}&appid={API key}"
+    console.log(API)
+
+    // fetch(API).then(function (response) {
+    //     if (response.ok) {
+    //         response.json().then(function (data) {
+    //             $
+    //         })
+    //     }
+    // })
+}
+}
+
+
+
+
+var forecastDate = $("#d" + i + "-date");
+            // console.log(forecastDate)            
+            // var fmonth = forecastDate.getMonth();
+            // var fday = forecastDate.getDate();
+            // var fyear = forecastDate.getFullYear();
+            // console.log(year)
+            // var cleanForecastDate = fmonth + "-" + fday + "-" + fyear;
+            forecastDate.text(index.dt_txt);
+
+            // Icon
+            var forecastIcon = $("#d" + i + "-icon");
+            console.log(forecastIcon)
+            var forecastIconData = index.weather[0].icon;
+            forecastIcon.attr ("src", "https://openweathermap.org/img/wn/" + forecastIconData + ".png");
+            
+            // Temp
+            var forecastTemp = $("#d" + i + "-temp");
+            console.log(forecastTemp)
+            forecastTemp.text("Temp: " + index.main.temp_max.toFixed(0) + "\u00B0F");
+            
+            // Humidity
+            var forecastHum = $("#d" + i + "-hum");
+            console.log(forecastHum)
+            forecastHum.text("Humidity: " + index.main.humidity + "%");
+
+            // Wind
+            var forecastWind = $("#d" + i + "-wind");
+            console.log(forecastWind)
+            forecastWind.text("Wind: " + index.wind.speed.toFixed(0) + " mph");
+            
