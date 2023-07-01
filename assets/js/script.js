@@ -42,7 +42,7 @@ function start() {
    
 // Convert city into latitude and longitude with Geocoding API as required for the 5 day/3 hour API
 function convertCity(city, properCity) {    
-    var API = "http://api.openweathermap.org/geo/1.0/direct?q=" + city + "&limit=1&appid=149861ed5d9f1dae44966127838b3fb0"
+    var API = "https://api.openweathermap.org/geo/1.0/direct?q=" + city + "&limit=1&appid=149861ed5d9f1dae44966127838b3fb0"
     console.log(API)
 
     fetch(API).then(function (response) {
@@ -58,7 +58,7 @@ function convertCity(city, properCity) {
 
         localStorage.setItem(properCity, latLonPair)
 
-        var API = "http://api.openweathermap.org/data/3.0/onecall?lat=" + lat + "&lon=" + lon + "&exclude=hourly,minutely&units=imperial&appid=149861ed5d9f1dae44966127838b3fb0"
+        var API = "https://api.openweathermap.org/data/3.0/onecall?lat=" + lat + "&lon=" + lon + "&exclude=hourly,minutely&units=imperial&appid=149861ed5d9f1dae44966127838b3fb0"
         console.log(API)
         console.log(properCity)
 
@@ -78,7 +78,7 @@ function convertCity(city, properCity) {
 
 function archivedCity(coordinates) {
  
-    var API = "http://api.openweathermap.org/data/3.0/onecall?lat=" + coordinates[0] + "&lon=" + coordinates[1] + "&exclude=hourly,minutely&units=imperial&appid=149861ed5d9f1dae44966127838b3fb0"    
+    var API = "https://api.openweathermap.org/data/3.0/onecall?lat=" + coordinates[0] + "&lon=" + coordinates[1] + "&exclude=hourly,minutely&units=imperial&appid=149861ed5d9f1dae44966127838b3fb0"    
     
     fetch(API).then(function (response) {
         if (response.ok) {
